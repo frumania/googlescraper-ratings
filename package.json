@@ -2,10 +2,10 @@
   "name": "googlescraper-ratings",
   "version": "1.0.0",
   "description": "A module to search and scrape google ratings. Based on https://github.com/jprichardson/node-google. This is not sponsored, supported, or affiliated with Google Inc.",
-  "homepage": "",
+  "homepage": "https://github.com/frumania/googlescraper-ratings",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/frumania/googlescraper-ratings"
   },
   "keywords": [
     "google",
