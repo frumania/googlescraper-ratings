@@ -29,4 +29,4 @@ License
 
 Licensed under MIT. See `LICENSE` for more details.
 
-Copyright (c) 2012-2016 JP Richardson
+Copyright (c) 2018 Marcel Törpe
