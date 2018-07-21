@@ -1,0 +1,33 @@
+{
+  "name": "googlescraper-ratings",
+  "version": "1.0.0",
+  "description": "A module to search and scrape google ratings. Based on https://github.com/jprichardson/node-google. This is not sponsored, supported, or affiliated with Google Inc.",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "google",
+    "search",
+    "scrape",
+    "scraper",
+    "screen"
+  ],
+  "author": "Marcel Törpe",
+  "license": "MIT",
+  "dependencies": {
+    "aws-serverless-express": "*",
+    "cheerio": "*",
+    "express": "*",
+    "request": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "standard": "^11.0.1"
+  },
+  "main": "./lib/google",
+  "scripts": {
+    "test": "standard && mocha"
+  }
+}
