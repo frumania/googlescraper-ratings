@@ -22,7 +22,7 @@ Use index.js (index.handler)
 How to Use
 ------------
 
-tbd
+e.g. http://localhost:8999/?q=walldorf+astoria+new+york
 
 License
 -------
