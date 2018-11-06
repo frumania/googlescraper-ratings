@@ -5,6 +5,8 @@ Inspired by / based on https://github.com/jprichardson/node-google
 
 Script scrapes google search results and extracts/returns all entries, that have a rating.
 
+Powering https://findsreviews.com ;)
+
 Installation
 ------------
 
