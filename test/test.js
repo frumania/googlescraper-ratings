@@ -28,6 +28,8 @@ describe('Search', function() {
                 
                 assert.notEqual(response.length, 0);
                 assert.notEqual(response[0].link, "");
+                assert.notEqual(response[0].ratingCount, NaN);
+                assert.notEqual(response[0].ratingCount, 0)
 
                 console.log(response);
             })
