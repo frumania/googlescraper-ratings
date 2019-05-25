@@ -1,6 +1,8 @@
 Purpose
 =====================
 
+[![Build Status](https://travis-ci.org/frumania/googlescraper-ratings.svg?branch=master)](https://travis-ci.org/frumania/googlescraper-ratings)
+
 Inspired by / based on https://github.com/jprichardson/node-google
 
 Script scrapes google search results and extracts/returns all entries, that have a rating.
