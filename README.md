@@ -25,7 +25,7 @@ Use index.js (index.handler)
 How to Use
 ------------
 
-e.g. http://localhost:8999/?q=walldorf+astoria+new+york
+e.g. http://localhost:8999/?q=waldorf+astoria+new+york
 
 License
 -------

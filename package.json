@@ -18,18 +18,21 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.389.0",
-    "aws-xray-sdk": "^2.1.0",
     "aws-serverless-express": "*",
-    "cheerio": "*",
+    "aws-xray-sdk": "^2.1.0",
+    "cheerio": "^0.22.0",
     "express": "*",
     "request": "*"
   },
+  "directories": {
+    "test": "test"
+  },
   "devDependencies": {
-    "mocha": "*",
+    "mocha": "^6.1.4",
     "standard": "^11.0.1"
   },
   "main": "./lib/google",
   "scripts": {
-    "test": "standard && mocha"
+    "test": "mocha"
   }
 }
