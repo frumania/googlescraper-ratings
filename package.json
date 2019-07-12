@@ -22,7 +22,9 @@
     "aws-xray-sdk": "^2.1.0",
     "cheerio": "^0.22.0",
     "express": "*",
-    "request": "*"
+    "request": "*",
+    "lodash": "*",
+    "lodash.merge": "*"
   },
   "directories": {
     "test": "test"
