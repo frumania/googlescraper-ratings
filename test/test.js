@@ -27,6 +27,7 @@ describe('Search', function() {
                 response = res.links;
                 
                 assert.notEqual(response.length, 0);
+                assert.equal(response[0].title, "GOOGLE");
                 assert.notEqual(response[0].link, "");
                 assert.notEqual(response[0].ratingCount, NaN);
                 assert.notEqual(response[0].ratingCount, 0)
