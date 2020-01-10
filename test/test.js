@@ -25,6 +25,8 @@ describe('Search', function() {
                 if (err) console.error(err)
 
                 response = res.links;
+
+                console.log(response);
                 
                 assert.notEqual(response.length, 0);
                 assert.notEqual(response.length, 1);
@@ -33,8 +35,6 @@ describe('Search', function() {
                 assert.notEqual(response[0].ratingCount, NaN);
                 assert.notEqual(response[0].ratingCount, 0);
                 assert.notEqual(response[1].ratingCount, 0);
-
-                console.log(response);
             })
         }
 
