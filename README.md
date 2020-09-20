@@ -17,7 +17,7 @@ npm install
 Run e.g. Locally
 ------------
 
-npm start (default port 8999)
+node index.js (default port 3000)
 
 Run Serverless (AWS LAMBDA)
 ------------
@@ -34,4 +34,4 @@ License
 
 Licensed under MIT. See `LICENSE` for more details.
 
-Copyright (c) 2018 Marcel Törpe
+Copyright (c) 2020 Marcel Törpe

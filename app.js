@@ -24,10 +24,14 @@ app.get('/', function (request, response)
     google.priceText = 'Preisspanne:';
   }
 
-  var input = request.apiGateway.event;
+  var input;
+
+  if(request.apiGateway)
+  input = request.apiGateway.event;
+
   console.log(input);
 
-  if(input.query)
+  if(input && input.query)
   {
     search = input.query;
   }
