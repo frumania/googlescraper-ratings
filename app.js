@@ -1,7 +1,5 @@
 //START
-
 var google = require('./lib/google')
-
 var express = require('express');
 var app = express();
 
@@ -12,25 +10,34 @@ var url = require('url');
 
 app.get('/', function (request, response) 
 {
-  //res.send('Hello World!');
+
   var query = url.parse(request.url,true).query;
-  var search = query.q
+  var search = query.q;
+  var language = query.l;
 
-  google.resultsPerPage = 25
-  google.lang = 'de'
-  google.tld = 'de'
-  google.priceText = 'Preisspanne:'
-
-  console.log(request.apiGateway.event);
+  if(language && language == "de")
+  {
+    google.tld = 'de'
+    google.lang = 'de'
+    google.requestOptions = {}
+    google.nextText = 'Weiter'
+    google.priceText = 'Preisspanne:';
+  }
 
   var input = request.apiGateway.event;
+  console.log(input);
 
   if(input.query)
   {
     search = input.query;
   }
 
-  console.log(search);
+  search = search.replace(/\,/g, " ");
+  search = search.replace(/\+/g, " ");
+  search = search.replace(/\-/g, " ");
+  search = search.replace(/\s\s/g, " ");
+
+  console.log("Searchterm: "+search);
 
   response.setHeader("Content-Type", "application/json; charset=utf-8");
 
