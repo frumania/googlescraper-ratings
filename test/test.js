@@ -8,13 +8,7 @@ describe('Search', function() {
         var url = require('url');
         const http = require('http')
 
-        //var query = url.parse(request.url,true).query;
-        var search = "waldorf+astoria+new+york";
-
-        google.resultsPerPage = 25
-        google.lang = 'de'
-        google.tld = 'de'
-        google.priceText = 'Preisspanne:'
+        var search = "waldorf astoria new york";
 
         var response = [];
 
