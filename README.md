@@ -17,7 +17,7 @@ npm install
 Run e.g. Locally
 ------------
 
-node index.js (default port 3000)
+node app.js (default port 3000)
 
 Run Serverless (AWS LAMBDA)
 ------------
@@ -27,7 +27,7 @@ Use index.js (index.handler)
 How to Use
 ------------
 
-e.g. http://localhost:8999/?q=waldorf+astoria+new+york
+e.g. http://localhost:3000/?q=waldorf+astoria+new+york
 
 License
 -------

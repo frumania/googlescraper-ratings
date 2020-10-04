@@ -10,10 +10,10 @@ var url = require('url');
 
 app.get('/', function (request, response) 
 {
-
   var query = url.parse(request.url,true).query;
   var search = query.q;
   var language = query.l;
+  var input;
 
   if(language && language == "de")
   {
@@ -24,15 +24,12 @@ app.get('/', function (request, response)
     google.priceText = 'Preisspanne:';
   }
 
-  var input;
-
   if(request.apiGateway)
-  input = request.apiGateway.event;
-
-  console.log(input);
-
-  if(input && input.query)
   {
+    input = request.apiGateway.event;
+    console.log(input);
+
+    if(input.query)
     search = input.query;
   }
 
